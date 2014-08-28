@@ -40,4 +40,4 @@ C: c.c c.h defs.h
 	$(CC) $(CFLAGS) -g c.c -o c.exe
 
 clean:
-	rm *.exe *~ *.o
+	rm *.exe *~
