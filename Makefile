@@ -19,11 +19,11 @@ all: A B C
 A: defs.h
 	$(CC) $(CFLAGS) -g a.c -o a.exe
 
-B: b.c b.h
-	$(CC) -g b.c -o b.exe
+B: b.c b.h defs.h
+	$(CC) $(CFLAGS) -g b.c -o b.exe
 
-C: c.c c.h
-	$(CC) -g c.c -o c.exe
+C: c.c c.h defs.h
+	$(CC) $(CFLAGS) -g c.c -o c.exe
 
 clean:
 	rm *.exe *~
