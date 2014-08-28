@@ -1,5 +1,5 @@
 
-objecs = a.c b.c c.c a.h b.h c.h
+objects = a.c b.c c.c a.h b.h c.h
 SRC = a.c b.c c.c
 headers = a.h b.h c.h
 VPATH = ./:include:
